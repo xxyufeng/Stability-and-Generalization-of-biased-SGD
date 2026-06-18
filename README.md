@@ -17,8 +17,6 @@ This script focuses on analyzing the **Algorithmic Stability and Excess Risk** o
 ### 3. `dataset_and_model.py` (Data & Model Utilities)
 This script serves as the core utility module for all data loading, preprocessing, and model architecture definitions used across the ASGD experiments.
 
-### 4.  `visualize_stability_evolution.py` and `visualize_test_error_evolution.py`
-
 *   **Datasets Supported:** 
     *   **Vision Datasets:** MNIST, CIFAR-10.
     *   **LibSVM Datasets (Sparse/Tabular):** RCV1, GISETTE, a1a, w1a, ijcnn.
@@ -26,6 +24,9 @@ This script serves as the core utility module for all data loading, preprocessin
     *   **Linear/Convex Models:** Linear Classifiers for RCV1, GISETTE, MNIST, CIFAR-10, a1a, w1a, ijcnn (`Linear_RCV1`, `Linear_MNIST`, etc.).
     *   **Non-Convex Neural Networks:** Multilayer Perceptrons (`FCNET_MNIST`), and small Deep CNNs adapted for CIFAR-10 (`ResNet18_CIFAR10`, `MobileNetV1_CIFAR10`, `ShuffleNetV2_CIFAR10`, `ResNet20_CIFAR10`).
     *   **Loss Functions:** Wraps training targets automatically using Mean Squared Error (`mse`), Cross Entropy (`ce`), or parameterized Hinge Loss (`hingeloss`).
+ 
+### 4.  `visualize_stability_evolution.py` and `visualize_test_error_evolution.py`
+This script focuses on drawing the evolution of stability and test error.
 
 ---
 
